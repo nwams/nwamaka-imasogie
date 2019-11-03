@@ -117,7 +117,7 @@
           <a href="#" id="main-menu-close" class="menu-close">
             <span class="bold">✕</span>
           </a>
-          <a href="#work" class="nav-link secondary-color">Work</a>
+          <a href="#work" class="nav-link secondary-color">Projects</a>
           <a href="#press" class="nav-link secondary-color">Press</a>
           <a target="_blank" href="https://github.com/nwams" class="nav-link secondary-color">GitHub</a>
         </nav>
@@ -135,24 +135,21 @@
             </div>
           </div>
         </div>
-        <h2 class="paragraph secondary-color mt20">I'm a software engineer, creator, and inventor. I'm
-          obsessed with data-driven decision making and I believe that good software shouldn't need a training
-          manual. I have 8 years of experience creating technology on both
-          the entrepreneurship and industry side. I’ve founded 2 startups & exited both, hired and led 8 teams of
+        <h2 class="paragraph secondary-color mt20">I'm a Machine Learning engineer with an affinity for Natural
+          Language Processing. I have 8 years of experience creating technology on both
+          the entrepreneurship and industry side. I’ve founded 2 startups & exited both, hired/led 8 teams of
           engineers, built and shipped 6 products from idea to launch and operation.</h2>
-        <h2 class="paragraph secondary-color mt20">As Chief Technology Officer and founder of <a target="_blank"
-                                                                                                 href="http://gitlinks.com"
-                                                                                                 class="link-green">
+        <h2 class="paragraph secondary-color mt20">As CTO and founder of <a target="_blank"
+                                                                            href="http://gitlinks.com"
+                                                                            class="link-green">
           GitLinks</a> I led our technology acquisition (acquired by multibillion-dollar enterprise software company, <a
-          target="_blank" href="https://infor.com" class="link-green">Infor</a>). GitLinks is a SaaS product
-          that automates application security and license compliance for open source software.
+          target="_blank" href="https://infor.com" class="link-green">Infor</a>). GitLinks was a B2B SaaS product
+          that automated application security and license compliance for open source software.
           I built our product, hired and led our engineering team, and pitched to convince investors to fund
           us.</h2>
-        <h2 class="paragraph secondary-color mt20">Additionally, I'm the inventor on two technology patents. I've had a
-          lot of fun working on technologies like Machine Learning, Data Science (big data),
-          Architecture/Infrastructure, Image Recognition, Security, User Interface Design/Prototyping, Systems Design,
-          and
-          Blockchain.
+        <h2 class="paragraph secondary-color mt20">Additionally, I'm the inventor on two technology patents. I've had
+          a lot of fun working on technologies like Machine Learning/Data Science, Architecture/Infrastructure, and
+          User Interface Design.
         </h2>
         <h2 class="paragraph secondary-color mt20">I have a masters degree in Computer Science from Cornell University
           and a bachelors degree in Electrical Engineering from the University of Houston.
@@ -199,7 +196,69 @@
 <section id="feature-2" class="section avocado-white" sitemeta="[object Object]">
   <div class="container text-center mb75">
     <div class="col-12">
-      <h3 class="heading primary-color">Highlighted Projects</h3>
+      <h3 class="heading primary-color">Machine Learning Projects</h3>
+      <!---->
+    </div>
+  </div>
+  <div class="container-lrg flex">
+    <div class="flex col-6 flex-column mobile-text-center center-vertical">
+      <!---->
+      <h3 class="bold primary-color">Predicting Hospital Readmission using NLP</h3>
+      <p class="paragraph secondary-color">I built a machine learning model to predict 30-day unplanned hospital
+        re-admission using over 2 million rows of clinical notes. My approach (AUC=0.83) outperformed the baseline
+        results by 13%.</p>
+      <ul>
+        <li>Healthcare, classification, predictive analytics, hyperparameter tuning, clinical free-text notes</li>
+        <li>AUC, prevalence, recall, precision, ROC, balancing data</li>
+        <li>Scikit-learn, bag-of-words, logistic regression, evaluating performance, learning curve</li>
+      </ul>
+    </div>
+    <div class="col-6 flex center-horizontal center-vertical">
+      <div class="launchaco-builder-hoverable">
+        <div class="">
+          <a target="_blank"
+             href="https://medium.com/nwamaka-imasogie/predicting-hospital-readmission-using-nlp-5f0fe6f1a705">
+            <img src="images/work/hospital_revolving_door.jpg" alt="Hospital revolving door"
+                 class="custom-img">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="feature-9" class="section gray-white" sitemeta="[object Object]">
+  <div class="container-lrg flex">
+    <div class="flex col-6 flex-column mobile-text-center center-vertical">
+      <!---->
+      <h3 class="bold primary-color">NLP & Stand-Up Comedy</h3>
+      <p class="paragraph secondary-color">I walk through text pre-processing and machine learning techniques to answer
+        the question “What makes Ali Wong’s comedy routine stand out?” I do exploratory data analysis on 12 comedian’s
+        routines.</p>
+      <ul>
+        <li>Sentiment Analysis — TextBlob</li>
+        <li>Topic Modeling — NLTK, gensim, Latent Dirichlet Allocation (LDA)</li>
+        <li>Exploratory Data Analysis — matplotlib, wordcloud</li>
+        <li>Text Pre-Processing — scikit-learn, pandas, requests, document-term matrix / bag of words</li>
+      </ul>
+    </div>
+    <div class="col-6 flex center-horizontal center-vertical">
+      <div class="launchaco-builder-hoverable">
+        <div class="">
+          <a target="_blank"
+             href="https://medium.com/nwamaka-imasogie/stand-up-comedy-and-nlp-c7d64002520c">
+            <img src="images/work/nlp_comedy.png" alt="Hospital revolving door"
+                 class="custom-img">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="feature-10" class="section avocado-white" sitemeta="[object Object]">
+  <div class="container text-center mb75">
+    <div class="col-12">
+      <h3 class="heading primary-color">My Startup Work</h3>
       <!---->
     </div>
   </div>
@@ -233,8 +292,12 @@
       <p class="paragraph secondary-color">I founded GitLinks. GitLinks is an application
         security, vulnerability management portal that continuously monitors. It supports Java, Javascript (npm)
         &amp; Python. It integrates with all Continuous Integration (CI) tools like Jenkins, TeamCity, CircleCI,
-        CodeShip etc. &#8226;Frontend: Polymer &#8226;Infrastructure: Google Cloud Platform, Kubernetes, Docker,
-        Postgres SQL &#8226;Backend: Scala.</p>
+        CodeShip etc.</p>
+      <ul>
+        <li>Frontend: Polymer</li>
+        <li>Infrastructure: Google Cloud Platform, Kubernetes, Docker, Postgres SQL</li>
+        <li>Backend: Scala</li>
+      </ul>
     </div>
     <div class="col-6 flex center-horizontal center-vertical">
       <div class="launchaco-builder-hoverable">
@@ -286,7 +349,7 @@
 <section id="feature-5" class="section gray-white" sitemeta="[object Object]">
   <div class="container text-center mb75">
     <div class="col-12">
-      <h3 class="heading primary-color">Projects</h3>
+      <h3 class="heading primary-color">Other Projects</h3>
       <!---->
     </div>
   </div>

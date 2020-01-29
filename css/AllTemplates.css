@@ -3460,3 +3460,8 @@ td.hljs-ln-code {
         display: none
     }
 }
+
+/* mouse over link */
+a:hover {
+    color: #24CA83;
+}

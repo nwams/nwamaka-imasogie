@@ -13,6 +13,7 @@
   <!--gtag('config', 'UA-114060810-1');-->
   <!--</script>-->
 
+
   <title>Nwamaka Imasogie</title>
   <meta charSet="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -152,7 +153,7 @@
                                                                             href="http://gitlinks.com"
                                                                             class="link-green">
           GitLinks</a> I led our acquisition (sold product to <a
-            target="_blank" href="https://infor.com" class="link-green">Infor</a>). GitLinks was a B2B SaaS product
+          target="_blank" href="https://infor.com" class="link-green">Infor</a>). GitLinks was a B2B SaaS product
           that automated application security and legal compliance for open source software.
           I built our product, hired and led our engineering team, and pitched technical aspects to investors.
         </h2>
@@ -198,14 +199,46 @@
 </section>
 
 <a name="work"></a>
-<!--<section id="feature-14" class="section avocado-white" style="padding-bottom: 0">-->
-  <!--<div class="container text-center mb75">-->
-    <!--<div class="col-12">-->
-      <!--<h3 class="heading primary-color">RETINA-AI Health</h3>-->
-      <!--&lt;!&ndash;&ndash;&gt;-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</section>-->
+<section id="feature-14" class="section avocado-white" style="padding-bottom: 0">
+  <div class="container text-center mb75">
+    <div class="col-12">
+      <h3 class="heading primary-color">RETINA-AI Health</h3>
+      <!---->
+    </div>
+  </div>
+</section>
+<section id="feature-15" class="section gray-white">
+  <!-- carousel-->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 2</div>
+      <img class="cap-carousel-height" src="images/work/nwamaka_imasogie_clinical_trial.JPG" style="width:100%">
+      <div class="text">Me, launching the clinical trial and instructing the staff at one of the multiple sites.</div>
+    </div>
+
+    <div class="mySlides fade center-it">
+      <div class="numbertext center-it">2 / 2</div>
+      <img class="cap-carousel-height center-it" src="images/work/nwamaka_imasogie_clinical_trial_2.jpg">
+      <div class="text">Setting up the clinical trial</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+
+  <!---->
+
+  
+</section>
+
 <section id="feature-2" class="section avocado-white" style="padding-bottom: 0">
   <div class="container text-center mb75">
     <div class="col-12">
@@ -603,4 +636,36 @@
 <script src="https://fast.wistia.com/embed/medias/7food4v15c.jsonp" async></script>
 <script src="https://fast.wistia.com/embed/medias/wrp6zxcxod.jsonp" async></script>
 <script src="https://fast.wistia.com/embed/medias/o14kum4uqz.jsonp" async></script>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+</script>
 </html>
